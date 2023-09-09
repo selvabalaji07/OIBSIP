@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    min-width: 100vh;
+    background-image: url('busimage.jpg');
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    animation: change 12s infinite ease-in-out ;
+}
+.article{
+    text-align: center;
+    justify-content: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+}
+button{
+    background-color: rgb(88, 26, 146);
+    padding: 5% 5%;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(143, 6, 6);
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image:url('busimage.jpg');
+    }
+    
+    35%
+    {
+        background-image:url('img3.jpeg')
+    }
+    70%
+    {
+        background-image: url('bus-snowing-city-night.jpg');
+    }
+    100%
+    {
+        background-image: url('bus-snowing-city-night.jpg');
+    }
+
+}
+
+
+nav{
+    height: 80px;
+
+}
+nav h1{
+    float: left;
+    line-height: 80 px;
+    font-size: 35px;
+    font-size: inline;
+    color:#eb7620;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Vertically center items */
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display the list items horizontally */
+}
+
+nav ul li {
+    margin-left: 15px; /* Add some spacing between list items */
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+     padding: 7px 8px;
+}
+nav {
+    justify-content: space-between;
+    background-color:#00cccc;
+    text-align: center;
+    align-items: center;
+    padding: 12px 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+nav ul li{
+    margin:0 5px;
+}
+
+nav ul li a:hover{
+    background-color: #eb7620;
+    transition: 0.5s ease;
+}
+.text-center {
+    text-align: center;
+    
+}
+.column{
+    padding-left: 63px;
+    padding-right: 63px;
+}
+
+
+
+.box{
+    padding: 12px 22px;
+    margin: 12px 20px;
+    min-width: 27vw;
+    border:2px solid black;
+}
+.box ul{
+    list-style-type: none;
+    text-align: center;
+}
+.box ul li{
+    margin: 10px 2px;
+}
+.column {
+    display: flex; /* Make the child elements flex containers */
+    justify-content: space-between; /* Distribute the child elements evenly */
+}
+
+.box {
+    flex: 1; /* Make each box flexible to occupy available space */
+    padding: 10px; /* Add some spacing between boxes if needed */
+    border: 1px solid #200c0c; /* Add a border for better visualization */
+    background-color: #f0f0f0; /* Add a background color if needed */
+}
+.box-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    text-align: center;
+    max-width: 200px; /* Adjust the maximum width as needed */
+    max-height: 150px; /* Adjust the maximum height as needed */
+    overflow: auto; /* Add overflow for content that exceeds the box size */
+}
+
+
+.content-horizontal {
+    display: flex; /* Arrange content horizontally */
+    flex-direction: row; /* Make sure it's horizontal, which is the default */
+    align-items: center; /* Vertically center content if needed */
+}
+.box-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Add margin to push the container down */
+    margin-left:0px ;
+}
+
+
+
+  </style>
+</head>
+<body>
+   <section>
+    <div class="container">
+        <nav class="logo">
+            <h1>BookmyBus</h1>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">service</a></li>
+                
+            </ul>
+        </nav>
+        <div class="article">
+            <h1 class="heading">Book your Bus tickets now</h1><br>
+            <button>Book now</button>
+        </div>
+    </div>
+   </section>
+   <section class="column">
+   
+    <div class="box-flex">
+        <div class="box">
+            <h2>Semi sleeper</h2>
+            <div class="content-horizontal">
+                
+                <ul>
+                    <li>Minimum price will be $5</li>
+                    <li>Totally 60 seats will be available</li>
+                    <li>Available in the morning and evening</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Sleeper</h2>
+            <div class="content-horizontal">
+            
+              <ul>
+                <li>Minimum price will be $7</li>
+                <li>totally 47 seats will be available</li>
+                <li>available at any time</li>
+              </ul>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Sleeper AC</h2>
+            <div class="content-horizontal">
+                
+                <ul>
+                  <li>Minimum price will be $9</li>
+                  <li>totally 50 seats will be available</li>
+                  <li>available at any time</li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

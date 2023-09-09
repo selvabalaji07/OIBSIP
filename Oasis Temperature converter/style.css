@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group label,
+.input-group select {
+    font-size: 18px;
+}
+
+.input-group input {
+    padding: 5px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#result {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Reset some default styles for better consistency */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color */
+body {
+  
+    background-image: url('starry_sky_silhouette_swing_118434_1440x900.jpg');
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style the header */
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #009688;
+}
+
+/* Style the container */
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.container1{
+    margin: 120px auto;
+}
+/* Style the input group */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group label,
+.input-group select {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.input-group input {
+    padding: 4px;
+    font-size: 12px;
+    flex-grow: 1;
+    border: 2px solid #009688;
+    border-radius: 2px;
+}
+
+/* Style the dropdown menu */
+.input-group select {
+    padding: 8px;
+    border: 2px solid #009688;
+    border-radius: 5px;
+}
+
+/* Style the convert button */
+#convert {
+    background-color: #009688;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#convert:hover {
+    background-color: #00796b;
+}
+
+/* Style the result display area */
+#result {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #009688;
+}

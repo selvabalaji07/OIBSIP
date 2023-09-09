@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    min-width: 100vh;
+    background-image: url('busimage.jpg');
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    animation: change 12s infinite ease-in-out ;
+}
+.article{
+    text-align: center;
+    justify-content: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+}
+button{
+    background-color: rgb(88, 26, 146);
+    padding: 5% 5%;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(143, 6, 6);
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image:url('busimage.jpg');
+    }
+    
+    35%
+    {
+        background-image:url('img3.jpeg')
+    }
+    70%
+    {
+        background-image: url('bus-snowing-city-night.jpg');
+    }
+    100%
+    {
+        background-image: url('bus-snowing-city-night.jpg');
+    }
+
+}*/
+
+
+nav{
+    height: 80px;
+
+}
+nav h1{
+    float: left;
+    line-height: 80 px;
+    font-size: 35px;
+    font-size: inline;
+    color:#eb7620;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Vertically center items */
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display the list items horizontally */
+}
+
+nav ul li {
+    margin-left: 15px; /* Add some spacing between list items */
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+     padding: 7px 8px;
+}
+nav ul li a:hover{
+    background-color: #eb7620;
+    transition: 0.5s ease;
+}
